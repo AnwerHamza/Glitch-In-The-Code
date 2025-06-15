@@ -1,2 +1,2 @@
-# Hamza-Portfolio
-This is my first Portfolio Website
+My first GitHub Repository.
+Author - Hamza Anwer
