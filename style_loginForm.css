@@ -12,10 +12,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("https://i.etsystatic.com/18836924/r/il/bf1796/4522244578/il_fullxfull.4522244578_8n3r.jpg");
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   animation: fadeIn 2s ease-in-out;
 }
 
