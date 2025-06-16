@@ -1,1 +1,80 @@
-projects 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+       no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    animation: fadeIn 1.2s ease;
+    padding: 20px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .content {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    max-width: 90%;
+    text-align: center;
+    animation: glowPulse 2s infinite alternate;
+  }
+
+  @keyframes glowPulse {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 40px rgba(0, 255, 204, 0.6);
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffc3;
+    color: #00ffc3;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #ffffffcc;
+  }
+
+  p u {
+    text-decoration: none;
+    border-bottom: 2px solid #00ffc3;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
