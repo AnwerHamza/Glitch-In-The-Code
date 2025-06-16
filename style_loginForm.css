@@ -123,7 +123,7 @@ body {
 /* Button Styling */
 .header .button {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 8px;
   height: 45px;
   background-color: #00b4d8;
   border: none;
@@ -137,7 +137,7 @@ body {
 
 .header .button:hover {
   background-color: #0088a2;
-  transform: scalex(5px);
+  transform: scaley(5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
