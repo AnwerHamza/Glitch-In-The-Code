@@ -65,7 +65,7 @@ body {
   position: relative;
   width: 100%;
   height: 50px;
-  margin: 20px 0;
+  
   animation: inputFieldAnimation 1s ease-out;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .header .button:hover {
   background-color: #0088a2;
-  transform: translateY(-5px);
+  transform: scalex(5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
