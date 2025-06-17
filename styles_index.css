@@ -203,3 +203,38 @@ footer button:hover {
     width: 80%;
   }
 }
+
+.icons a i {
+  color: #d6e3f8;
+  font-size: 1.7em;
+  width: 7%;
+}
+
+.links a {
+  position: relative;
+  color: #a0b9c6;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.9%;
+  text-decoration: none;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.rights-reserved {
+  color: #c6d6e6;
+}
