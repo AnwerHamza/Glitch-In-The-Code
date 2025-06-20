@@ -63,7 +63,7 @@ header h2 p::after {
   width: 100px;
   background: #f5c400;
   border-radius: 10px;
-  animation: lineGrow 1s forwards;
+  animation: lineGrow 1.5s forwards;
 }
 
 @keyframes lineGrow {

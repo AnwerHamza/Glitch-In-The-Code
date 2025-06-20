@@ -63,7 +63,7 @@ header h2::after {
   width: 80px;
   background: #00f2ff;
   border-radius: 10px;
-  animation: slideIn 1s forwards;
+  animation: slideIn 1.5s forwards;
 }
 
 @keyframes slideIn {

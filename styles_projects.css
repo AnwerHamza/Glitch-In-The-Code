@@ -63,7 +63,7 @@ header h2::after {
   width: 100px;
   background: #f50000;
   border-radius: 10px;
-  animation: lineGrow 1s forwards;
+  animation: lineGrow 1.5s forwards;
 }
 
 @keyframes lineGrow {
@@ -73,6 +73,15 @@ header h2::after {
   to {
     width: 100px;
   }
+}
+
+ol {
+  list-style: decimal inside;
+  font-weight: normal;
+}
+
+ol li::marker {
+  font-weight: bold;
 }
 
 main ul {

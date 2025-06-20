@@ -121,8 +121,15 @@ nav img:hover {
   text-decoration: none;
 }
 
+.button button {
+  background: inherit;
+  border: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
 .button {
-  padding: 0.6em 46.3%;
+  padding: 0.6em 46.9%;
   display: inline-block;
   text-align: center;
   border: none;
@@ -149,10 +156,11 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.icons a i {
+.icons i {
   color: #d6e3f8;
   font-size: 1.8em;
   width: 4%;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,6 +168,10 @@ footer {
   flex-wrap: wrap;
   display: inline-block;
   flex-direction: row;
+}
+
+.icons a {
+  text-decoration: none;
 }
 
 .links a {
@@ -273,19 +285,20 @@ footer {
     font-size: 0.7em;
   }
 
-  .button a {
-    bottom: 1px;
-    position: relative;
-    font-size: 0.9em;
-    padding: 8px 19px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    transition: color 1.9s ease;
+  .button {
+    padding: 0.6em 39.7%;
+    transition: color 1.9s ease, background 1.9s ease;
+    display: inline-block;
   }
   .button:hover {
     border-radius: 30px;
-    background: linear-gradient(135deg, #00ffe7);
+    background: linear-gradient(135deg, #00ffe5);
     color: #2a586b;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 1920px) {
+  .links:active {
+    text-decoration: underline;
   }
 }
