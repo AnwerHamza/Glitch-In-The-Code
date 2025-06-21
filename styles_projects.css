@@ -84,6 +84,23 @@ ol li::marker {
   font-weight: bold;
 }
 
+.link-LF a {
+  display: inline; /* ✅ Sirf text ka area hoga clickable */
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.75rem;
+  margin-left: 3rem;
+  margin-bottom: 5px;
+  transition: all 0.9s ease, width 0.3s ease;
+}
+
+.link-LF a:hover {
+  width: 100%;
+  color: #00ffe7;
+  text-decoration: underline;
+  text-underline-offset: 8px; /* optional: thoda niche underline */
+}
+
 main ul {
   padding-left: 50px;
   font-size: 1.1rem;
