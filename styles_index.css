@@ -7,12 +7,19 @@
   font-family: "poppins", sans-serif;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 80px;
+  padding: 20px 80px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -21,18 +28,78 @@
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 2em;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+  user-select: none;
 }
 
 .navbar a {
-  font-size: 18px;
+  position: relative;
+  font-size: 1.1em;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 50px;
+  margin-left: 40px;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: navajowhite;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: all 0.7s;
+}
+
+.navbar .btnLogin-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  height: 65vh;
+  width: 28vw;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1); /* Light transparent */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Make sure it's above slider */
 }
 
 .container {
