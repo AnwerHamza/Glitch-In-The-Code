@@ -1,3 +1,4 @@
+// Slider
 const rotateBtn = document.querySelector(".rotate-btn");
 const slides = document.querySelectorAll(".bg-slide");
 const totalSlides = slides.length;
@@ -26,4 +27,17 @@ rotateBtn.addEventListener("click", () => {
   }
 
   slides[index].classList.add("active");
+});
+
+// login form
+const wrapper = document.querySelector(".wrapper");
+const loginLink = document.querySelector(".login-link");
+const registerLink = document.querySelector(".register-link");
+
+registerLink.addEventListener("click", () => {
+  wrapper.classList.add("activee");
+});
+
+loginLink.addEventListener("click", () => {
+  wrapper.classList.remove("activee");
 });
