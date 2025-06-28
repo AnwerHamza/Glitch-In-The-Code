@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   min-height: 100vh;
 }
 
@@ -85,10 +86,11 @@ body {
 
 .wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: absolute;
+  align-items: center;
   top: 50%;
+  position: absolute;
+  bottom: 50%;
   width: 400px;
   height: 440px;
   transform: translateY(-50%);
@@ -98,8 +100,13 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   z-index: 999;
-  /* overflow: hidden; */
-  transition: height 0.2s ease;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+}
+
+.wrapper.active-popup {
+  transform: scale(1) translateY(-50%);
 }
 
 .wrapper.activee {
@@ -112,12 +119,24 @@ body {
 }
 
 .wrapper .form-box.login {
-  /* display: none; */
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.activee .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
 }
 
 .wrapper .form-box.register {
   position: absolute;
+  transition: none;
   transform: translateX(400px);
+}
+
+.wrapper.activee .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
 }
 
 .wrapper .icon-close {
