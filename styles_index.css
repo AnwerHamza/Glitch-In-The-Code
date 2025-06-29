@@ -34,18 +34,35 @@ body {
   text-decoration: none;
   font-weight: 700;
   user-select: none;
+  transition: all 0.7s ease;
+}
+
+.logo:hover {
+  color: rgb(0, 255, 255);
 }
 
 .navbar a {
   position: relative;
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 40px;
+  margin-left: 10px;
+  padding: 3px 15px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
 }
 
-.navbar a::after {
+.navbar a:hover,
+.navbar a.active {
+  color: #162938;
+  border: 2px solid #fff;
+  background: rgba(0, 255, 255, 0.589);
+}
+
+/* .navbar a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -56,13 +73,13 @@ body {
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 
 .navbar a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-}
+} */
 
 .navbar .btnLogin-popup {
   width: 130px;
@@ -307,7 +324,8 @@ body {
 }
 
 .bg-slide .circle img {
-  object-fit: cover;
+  object-fit: contain;
+  transform: none;
   transform: rotate(0deg) scale(4.2);
   opacity: 0;
   transition: transform 1.5s cubic-bezier(0.645, 0.045, 0.355, 1),
