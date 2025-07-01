@@ -9,6 +9,7 @@
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 20px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +34,7 @@ header {
 }
 
 .logo:hover {
-  color: #333;
+  color: rgb(0, 255, 255);
 }
 
 .navigation a {
@@ -53,7 +54,7 @@ header {
 .navigation .active {
   color: #333;
   border: 2px solid #fff;
-  background: rgba(0, 255, 255, 0.548);
+  background: rgb(0, 255, 255);
 }
 
 .navigation a span {
@@ -81,5 +82,51 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("background.png");
+  background: url("background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#text {
+  position: absolute;
+  font-size: 5em;
+  color: #1b283a;
+  text-shadow: 2px 4px 5px #f9f9f9;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.parallax img#gate-left {
+  position: fixed;
+  transform: translateX(-282px);
+}
+
+.parallax img#gate-right {
+  position: fixed;
+  transform: translateX(305px);
+}
+
+.sec {
+  position: relative;
+  background: #020912;
+  padding: 30px 100px;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+  text-align: justify;
 }
