@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+nav {
+  animation: floatIn 1.8s ease;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -35,6 +39,7 @@ body {
   font-weight: 700;
   user-select: none;
   transition: all 0.9s ease;
+  animation: floatIn 1.8s ease;
 }
 
 .logo:hover {
@@ -448,6 +453,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: floatIn 1.5s ease;
 }
 
 .rotate-btn.active {
@@ -592,5 +598,27 @@ body {
 
   .wrapper {
     width: 95%;
+  }
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }

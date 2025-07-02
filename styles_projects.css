@@ -95,6 +95,10 @@ ol li::marker {
   transition: color 0.4s ease;
 }
 
+.link-LF {
+  margin: 20px 40px;
+}
+
 .link-LF a::after {
   content: "";
   position: absolute;

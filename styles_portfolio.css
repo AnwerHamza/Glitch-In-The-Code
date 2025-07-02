@@ -33,6 +33,7 @@ body {
   font-weight: 700;
   user-select: none;
   transition: all 0.9s ease;
+  animation: floatIn 1.8s ease;
 }
 
 .logo:hover {
@@ -65,6 +66,7 @@ header {
   text-align: center;
   padding: 60px 20px;
   animation: fadeInSlide 1.5s ease;
+  margin-top: 1px;
 }
 
 header h1 {
